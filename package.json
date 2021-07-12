@@ -1,0 +1,30 @@
+{
+	"name": "@suigang/sg-com-lib",
+	"version": "1.0.1",
+	"description": "",
+	"main": "lib/sg-com-lib.common.js",
+	"scripts": {
+		"build:commonjs2": "webpack --config webpack.common.js",
+		"build:umd": "webpack --config webpack.umd.js",
+		"build": "npm run build:commonjs2 && npm run build:umd"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/suidagang/vue-components.git"
+	},
+	"keywords": ["组件库"],
+	"author": "suigang",
+	"license": "ISC",
+	"files": [
+		"lib",
+		"package.json"
+	],
+	"bugs": {
+		"url": "https://github.com/suidagang/vue-components/issues"
+	},
+	"homepage": "https://github.com/suidagang/vue-components#readme",
+	"devDependencies": {
+		"webpack": "^5.44.0",
+		"webpack-cli": "^4.7.2"
+	}
+}
